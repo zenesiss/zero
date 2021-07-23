@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+#content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    height: 27px;
+}
+.rng{
+    margin-top: 40px;
+}
+.br{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+ul li{
+    list-style: none;
+}

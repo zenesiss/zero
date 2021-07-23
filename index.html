@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="content">
+            <img src="logo1.png" class="ribbon"/>  
+        </div>
+    </header>
+    <main>
+        <div>
+            <img name= "slide"  class = "rng"  width="700px">
+        </div>
+<div class="br">
+    <ul>
+        <li>Project</li>
+        <li>Media</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+</div>
+    </main>
+    <footer>
+        
+    </footer>
+<script>
+    var i = 0;
+    var images = [];
+    var time = 3000;
+
+    images[0] = 'slide 1.jpg';
+    images[1] = 'slide 3.jpg';
+
+    function changeImg(){
+        document.slide.src = images[i];
+
+        if(i< images.length - 1){
+            i++;
+        } else {
+            i = 0;
+        }
+
+        setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+</script>
+</body>
+</html>
